@@ -1,0 +1,446 @@
+.about-section
+{
+    background-color: #0d1f1a;
+}
+.about-section.arabic
+{
+    direction: rtl;
+}
+
+.about-section .c1
+{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about-section .about-content h1
+{
+    color: #55ea43;
+    font-weight: bold;
+    font-size: 60px;
+}
+.about-section .about-content p
+{
+    width: 90%;
+    font-size:19px;
+    
+}
+.about-section .about-content h1.arabic
+{
+    text-align: right;
+    font-size: 70;
+    margin-top: 20px;
+}
+.about-section .about-content p.arabic
+{
+    text-align: right;
+    width: 80%;
+    font-size:22px;
+    margin-left: auto;
+   
+}
+
+.about-section .ceo-content
+{
+    background-color: #1a2f2a;
+    border-radius: 20px;
+    border-left: 7px solid #55ea43;
+    height: 200px;
+    opacity: 0;
+}
+.about-section .about-content
+{
+    opacity: 0;
+}
+.about-section .about-content.animate
+{
+    animation: slideInLeft 1.2s ease-out forwards;
+}
+.about-section .ceo-content.animate
+{
+    animation: slideInRight 1.2s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.about-section .ceo-content .container
+{
+    padding-top: 25px;
+}
+
+.about-section .ceo-content h3
+{
+    color: #55ea43;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.about-section .ceo-content h3.arabic
+{
+    text-align: right;
+    font-size: 40px;
+}
+.about-section .ceo-content p
+{
+    color: #cccc;
+    font-size: 20px;
+
+}
+.about-section .ceo-content .paragraph13.arabic
+{
+   text-align: right;
+   font-size: 25px;
+}
+
+.about-section .ceo-content .text
+{
+    color: #888888;
+    width: 80%;
+    font-style: italic;
+    font-size: 20px;
+
+}
+.about-section .ceo-content .text.arabic
+{
+   text-align: right;
+   
+}
+
+.about-section .r-2
+{
+    margin-top: 70px;
+}
+
+.about-section .r-2 h1
+{
+    color: #55ea43;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.about-section .r-2 .container
+{
+    background-color: #1a2f2a;
+    border-radius: 20px;
+    width: 80%;
+    height: 250px;
+    margin-top: 50px;
+    padding-top: 40px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    /* animation: slideInRight 1.5s ease-out; */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    /* padding-bottom: 20px; */
+
+}
+.about-section .r-2 .container.animate {
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-section .r-2 .container.container:hover
+{
+    box-shadow: 0 0 25px rgb(40, 193, 14,0.8);
+    /* border: 3px solid #55ea43; */
+    transform: translateY(-3px);
+}
+.about-section .r-2 h4
+{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+.about-section .r-2 p
+{
+    width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media all and (max-width: 445px)
+{
+    .about-section .about-content 
+    {
+       margin-bottom: 70px;
+       text-align: center;
+    }
+    .about-section .about-content p
+    {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        
+    }
+    .about-section .about-content h1
+    {
+        font-size: 42px;
+    }
+    .about-section .ceo-content
+    {
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-section .ceo-content .text
+    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+    .about-section .r-2 .container
+    {
+        height: 300px;
+    }
+    .about-section .about-content h1.arabic
+    {
+        text-align: center;
+        font-size: 70;
+        margin-top: 20px;
+    }
+    .about-section .about-content p.arabic
+    {
+        text-align: center;
+        width: 80%;
+        font-size:22px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .about-section .ceo-content h3.arabic
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+    .about-section .ceo-content .paragraph13.arabic
+    {
+    text-align: center;
+    font-size: 25px;
+    }
+
+    .about-section .ceo-content .text.arabic
+    {
+    text-align: center;
+    
+    }
+}
+
+@media all and (min-width: 445px) and (max-width: 576px)
+{
+    .about-section .about-content 
+    {
+       margin-bottom: 70px;
+       text-align: center;
+    }
+    .about-section .about-content p
+    {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        
+    }
+    .about-section .about-content h1
+    {
+        font-size: 55px;
+    }
+    .about-section .ceo-content
+    {
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-section .ceo-content .text
+    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 17px;
+    }
+    .about-section .about-content h1.arabic
+    {
+        text-align: center;
+        font-size: 70;
+        margin-top: 20px;
+    }
+    .about-section .about-content p.arabic
+    {
+        text-align: center;
+        width: 80%;
+        font-size:22px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .about-section .ceo-content h3.arabic
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+    .about-section .ceo-content .paragraph13.arabic
+    {
+    text-align: center;
+    font-size: 25px;
+    }
+
+    .about-section .ceo-content .text.arabic
+    {
+    text-align: center;
+    
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px )
+{
+    .about-section .about-content 
+    {
+       margin-bottom: 70px;
+       text-align: center;
+    }
+    .about-section .about-content p
+    {
+        width: 100%;
+    }
+    .about-section .ceo-content
+    {
+        text-align: center;
+    }
+    .about-section .ceo-content .text
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-section .about-content h1.arabic
+    {
+        text-align: center;
+        font-size: 70;
+        margin-top: 20px;
+    }
+    .about-section .about-content p.arabic
+    {
+        text-align: center;
+        width: 80%;
+        font-size:22px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .about-section .ceo-content h3.arabic
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+    .about-section .ceo-content .paragraph13.arabic
+    {
+    text-align: center;
+    font-size: 25px;
+    }
+
+    .about-section .ceo-content .text.arabic
+    {
+    text-align: center;
+    
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px  )
+{
+    .about-section .about-content 
+    {
+       margin-bottom: 70px;
+       text-align: center;
+    }
+    .about-section .about-content p
+    {
+        width: 100%;
+    }
+    .about-section .ceo-content
+    {
+        text-align: center;
+    }
+    .about-section .ceo-content .text
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-section .about-content h1.arabic
+    {
+        text-align: center;
+        font-size: 70;
+        margin-top: 20px;
+    }
+    .about-section .about-content p.arabic
+    {
+        text-align: center;
+        width: 80%;
+        font-size:22px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .about-section .ceo-content h3.arabic
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+    .about-section .ceo-content .paragraph13.arabic
+    {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .about-section .ceo-content .text.arabic
+    {
+    text-align: center;
+    
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px  )
+{
+    
+    
+    .about-section .r-2 .container
+    {
+        height: 300px;
+    }
+    
+
+
+}
+@media all and (min-width: 1200px) and (max-width: 1398px  )
+{
+
+}

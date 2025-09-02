@@ -1,0 +1,710 @@
+html
+{
+    direction: ltr;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    /* background-color: white; */
+    font-family: "Poppins", sans-serif;
+}
+
+li
+{
+    font-size: 16px;
+}
+
+
+.nav-item
+{
+    margin-right: 30px;
+    transition: all 0.5;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link
+{
+    color: white;
+}
+
+.navbar-toggler:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
+.logo
+{
+    width: 180px;
+}
+
+.start-5
+{
+    width: 100%;
+    position: relative;
+    left: 95px;
+}
+
+
+h1, h2, h3, h4, h5, h6,.logo {
+    font-family: "Arial", sans-serif;
+}
+p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #cccccc;
+}
+
+.nav-item ::before 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;  
+    width: 0%;
+    height: 2px; 
+    background-color: white;
+    transition: width 0.5s ease; 
+}
+
+.nav .nav-item ::before 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;  
+    width: 0%;
+    height: 3px; 
+    background-color: black;
+    transition: width 0.5s ease; 
+    transform: translateX(20%) ;
+}
+
+
+
+.nav-item .active::before 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;  
+    width: 100%;
+    height: 2px; 
+    background-color: #34eb12;
+    transition: width 0.3s ease; 
+}
+.active
+{
+    color: #34eb12 !important;
+}
+
+.nav .nav-item .active::before 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;  
+    width: 70%;
+    height: 3px; 
+    background-color: black;
+    transition: width 0.3s ease; 
+    transform: translateX(20%) ;
+}
+
+
+.navbar 
+{
+    background-color: #1a2f2a;
+    padding-bottom: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    
+}
+
+.navbar-toggler-icon
+{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: var(--bs-navbar-toggler-icon-bg);
+}
+
+.home-section
+{
+    background-image: linear-gradient(143deg, #213c36 0%, #0d1f1a 80%) !important;
+    padding-top:65px;
+    padding-bottom:65px;
+}
+
+.home-content h1
+{
+    /*7dff6b*/
+    background: linear-gradient(90deg, #7dff6b , #39ff14 90%);
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent;
+    background-clip: text;  
+    color: transparent;     
+    text-shadow: 0 0 25px rgb(57, 255, 20,0.8);
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    right: 4px;
+}
+.home-content h2
+{
+    color: #55ea43;
+    font-weight: bold;
+    font-size: 25px;
+}
+.home-content p
+{
+    color: #cccccc;
+    width: 80%;
+    font-size: 20px;
+    line-height: 2.1;
+    margin-top: 20px;
+    /* margin-left: auto;  */
+}
+
+.home-content .content
+{
+    position: relative;
+    left: 100px;
+    animation: slideInLeft 1.2s ease-out;
+    text-align: left;
+}
+.truck-image
+{
+    position: relative;
+    bottom: 28px;
+    animation: slideInRight 1.5s ease-out;
+}
+
+.truck-image img
+{
+    max-width: 78%;
+}
+
+.buttons .b1
+{
+    background-color: #34eb12;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgb(52, 235, 18,0.4);
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+.buttons .b1:hover
+{
+    background-color: #34eb12;
+    box-shadow: 0 0 25px rgb(40, 193, 14,0.6);
+    transform: translateY(-3px);
+}
+.buttons .b2
+{
+    display: inline-block;
+    background-color: transparent;
+    color: #34eb12;
+    border: 2px solid #34eb12;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+}
+.buttons .b2:hover
+{
+
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgb(52, 235, 18,0.4);
+}
+
+.home-content .content.arabic
+{
+    text-align: right;
+    left: 0 !important;
+}
+.home-content p.arabic
+{
+    margin-left: auto;
+    font-size: 25px;
+}
+.home-content h1.arabic
+{
+    right: 0 !important;
+    font-size: 100px !important;
+}
+.home-content h2.arabic
+{
+    font-size: 50px !important;
+}
+.home-content .buttons .b1.arabic
+{
+    font-size: 25px !important;
+}
+.home-content .buttons .b2.arabic
+{
+    font-size: 25px !important;
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.nav-item .nav-language
+{
+    display: none;
+}
+
+@media all and (max-width: 445px)
+{
+    .nav-item
+    {
+        margin-bottom: 20px;
+    }
+
+    .nav-item .nav-language
+    {
+        display: block;
+    }
+    .navbar .out-nav
+    {
+        display: none;
+    }
+    .truck-image img
+    {
+        display: none;
+    }
+
+    .home-content h1
+    {
+        font-size: 38px;
+        right: 0;
+    }
+    .home-content h2
+    {
+        font-size: 18px;
+    }
+    .home-content .content
+    {
+        left: 0;
+        justify-content: center !important; 
+        align-items: center !important;
+    }
+    .home-content p
+    {
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .logo
+    {
+        width: 120px;
+    }
+
+    .start-5
+    {
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+    .home-section .container-fluid
+    {
+        position: relative;
+        bottom: 15px
+    }
+    .content .buttons
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons .b1
+    {
+        
+        margin-right: 0px !important;
+        margin-bottom: 15px;
+    }
+    .buttons .b2:hover
+    {
+
+        transform: translateY(-3px);
+        box-shadow: 0 0 15px rgb(52, 235, 18,0.4);
+    }
+    .home-content .content.arabic
+    {
+        text-align: center;
+        left: 0 !important;
+    }
+    .home-content p.arabic
+    {
+        text-align: center;
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .home-content h1.arabic
+    {
+        right: 0 !important;
+        font-size: 55px !important;
+    }
+    .home-content h2.arabic
+    {
+        font-size: 50px !important;
+    }
+    .home-content .buttons .b1.arabic
+    {
+        font-size: 25px !important;
+    }
+    .home-content .buttons .b2.arabic
+    {
+        font-size: 25px !important;
+    }
+}
+/* (min-width: 576px) and (max-width: 768px ) */
+/* Extra small devices (portrait phones, less than 576px) */
+@media all and (min-width: 445px) and (max-width: 576px){
+
+    .nav-item
+    {
+        margin-bottom: 20px;
+    }
+    .nav-item .nav-language
+    {
+        display: block;
+    }
+    .navbar .out-nav
+    {
+        display: none;
+    }
+    .truck-image img
+    {
+        display: none;
+    }
+
+    .home-content h1
+    {
+        font-size: 45px;
+        right: 0;
+    }
+    
+    .home-content h2
+    {
+        font-size: 20px;
+    }
+    .home-content .content
+    {
+        left: 0;
+        justify-content: center !important; 
+        align-items: center !important;
+    }
+    .home-content p
+    {
+        width: 90%;
+        font-size: 17px;
+        text-align: center;
+    }
+    .logo
+    {
+        width: 120px;
+    }
+
+    .start-5
+    {
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+    .home-section .container-fluid
+    {
+        position: relative;
+        bottom: 15px
+    }
+    .home-content h1.arabic
+    {
+        right: 0 !important;
+        font-size: 60px !important;
+    }
+    .home-content h2.arabic
+    {
+        font-size: 40px !important;
+    }
+    .home-content p.arabic
+    {
+        text-align: center;
+        font-size: 25px;
+        margin-left: 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media all and (min-width: 576px) and (max-width: 768px )
+{
+
+    .nav-item
+    {
+        margin-bottom: 20px;
+    }
+    .nav-item .nav-language
+    {
+        display: block;
+    }
+    .navbar .out-nav
+    {
+        display: none;
+    }
+    .truck-image img
+    {
+        display: none;
+    }
+
+    .home-content h1
+    {
+        font-size: 45px;
+        right: 0;
+    }
+    .home-content h2
+    {
+        font-size: 19px;
+    }
+    .home-content .content
+    {
+        left: 0;
+        justify-content: center !important; 
+        align-items: center !important;
+    }
+    .home-content p
+    {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .logo
+    {
+        width: 120px;
+    }
+
+    .start-5
+    {
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+    .home-section .container-fluid
+    {
+        position: relative;
+        bottom: 15px
+    }
+    .home-content p.arabic
+    {
+        text-align: center;
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .home-content h1.arabic
+    {
+        right: 0 !important;
+        font-size: 70px !important;
+    }
+    .home-content h2.arabic
+    {
+        font-size: 45px !important;
+    }
+   
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media all and (min-width: 768px) and (max-width: 992px  ){
+
+    .nav-item
+    {
+        margin-bottom: 20px;
+    }
+    .nav-item .nav-language
+    {
+        display: block;
+    }
+    .navbar .out-nav
+    {
+        display: none;
+    }
+    .language-hidden
+    {
+        display: hidden;
+    }
+    .truck-image img
+    {
+        display: none;
+    }
+
+    .home-content h1
+    {
+        font-size: 60px;
+        right: 0;
+    }
+    .home-content h2
+    {
+        font-size: 25px;
+        
+    }
+    .home-content .content
+    {
+        left: 0;
+        justify-content: center !important; 
+        align-items: center !important;
+    }
+    .home-content p
+    {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+        color: #cccccc;
+    }
+    .logo
+    {
+        width: 120px;
+    }
+
+    .start-5
+    {
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+    .home-section .container-fluid
+    {
+        position: relative;
+        bottom: 15px
+    }
+    .home-content p.arabic
+    {
+        text-align: center;
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .home-content h1.arabic
+    {
+        right: 0 !important;
+        font-size: 80px !important;
+    }
+    .home-content h2.arabic
+    {
+        font-size: 45px !important;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media all and (min-width: 992px) and (max-width: 1200px  ){
+    .nav-item .nav-language
+    {
+        display: block;
+    }
+    .navbar .out-nav
+    {
+        display: none;
+    }
+    .home-content
+    {
+        width: 100% !important;
+    }
+    .home-section
+    {
+        height: 580px;
+    }
+
+    .truck-image img
+    {
+        display: none;
+    }
+
+    .home-content h1
+    {
+        font-size: 75px;
+        right: 0;
+    }
+    .home-content h2
+    {
+        font-size: 32px;
+        
+    }
+    .home-content .content
+    {
+        left: 0;
+        justify-content: center !important; 
+        align-items: center !important;
+    }
+    .home-content p
+    {
+        width: 80%;
+        font-size: 20px;
+        text-align: center;
+        color: #cccccc;
+    }
+    .logo
+    {
+        width: 120px;
+    }
+
+    .start-5
+    {
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+    .home-section .container-fluid
+    {
+        position: relative;
+        bottom: 15px
+    }
+    .home-content p.arabic
+    {
+        text-align: center;
+        font-size: 25px;
+        margin-left: 0;
+    }
+}
+
+/* Extra large devices (large desktops, less than 1400px) */
+@media all and (min-width: 1200px) and (max-width: 1398px  ){
+    .home-content h1
+    {
+        font-size: 70px;
+        right: 0;
+    }
+    .home-content h1.arabic
+    {
+        right: 0 !important;
+        font-size: 60px !important;
+    }
+    .home-content h2.arabic
+    {
+        font-size: 35px !important;
+    }
+}

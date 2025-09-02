@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Mako&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Mako&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lang.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/about.css">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navId">
+
+    <nav id="navId" class="navbar navbar-expand-lg z-3 pt-4  fixed-top ">
+        <div class="container-fluid  ">
+            <div class="logo">
+                <img class="navbar-brand position-relative start-5" src="images/brandmark-design.png" alt="DrivePro">
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse  navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item home ">
+                        <a class="nav-link nav-home active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-about" aria-current="page" href="#About">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-services" aria-current="page" href="#Services">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-contact" aria-current="page" href="#CONTACT">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="language-dropdown ">
+                            <button class="dropdown-trigger nav-language" id="languageTrigger">
+                                <span id="currentLangCode">En</span>
+                                <svg class="globe-icon" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    <path d="M2 12h20"></path>
+                                </svg>
+                                <svg class="chevron-icon" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </button>
+
+                            <div class="dropdown-menu position-absolute  " id="dropdownMenu">
+                                <button class="language-option active" data-lang="en" data-name="English">
+                                    <span class="flag">🇺🇸</span>
+                                    <div class="language-info">
+                                        <span class="language-name">English</span>
+                                        <span class="language-code">EN</span>
+                                    </div>
+                                </button>
+                                <button class="language-option" data-lang="ar" data-name="العربية">
+                                    <span class="flag">🇸🇦</span>
+                                    <div class="language-info">
+                                        <span class="language-name">العربية</span>
+                                        <span class="language-code">AR</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+        <div class="language-dropdown out-nav ms-auto">
+            <button class="dropdown-trigger" id="languageTrigger">
+                <span id="currentLangCode">En</span>
+                <svg class="globe-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    <path d="M2 12h20"></path>
+                </svg>
+                <svg class="chevron-icon" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+            </button>
+
+            <div class="dropdown-menu " id="dropdownMenu">
+                <button class="language-option active" data-lang="en" data-name="English">
+                    <span class="flag">🇺🇸</span>
+                    <div class="language-info">
+                        <span class="language-name">English</span>
+                        <span class="language-code">EN</span>
+                    </div>
+                </button>
+                <button class="language-option" data-lang="ar" data-name="العربية">
+                    <span class="flag">🇸🇦</span>
+                    <div class="language-info">
+                        <span class="language-name">العربية</span>
+                        <span class="language-code">AR</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="home-section overflow-hidden d-flex justify-content-between ">
+        <div class="container-fluid d-flex justify-content-around align-items-center">
+            <div class="row">
+                <div class="col-lg-6 home-content d-flex  flex-column align-items-center ">
+                    <div class=" content d-flex flex-column ">
+                        <h1 class="paragraph1">LEARN TO DRIVE</h1>
+                        <h2 class="paragraph2">Drive With Truck Safety And Control</h2>
+                        <p class="paragraph3">We are a specialized training center that focuses on heavy
+                            truck driving and heavy equipment maintenance and
+                            operation. Our high-quality training programs aim to develop
+                            the skills of drivers and technicians through our qualified and
+                            specialized team.</p>
+                        <div class="buttons mt-4">
+                            <a href="#" class="paragraph4 b1 btn me-3">Start Your Journy</a>
+                            <a href="#" class="paragraph5 b2">Our Programs</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 truck-image p-0 d-flex ">
+                    <img class=" ms-auto" src="images/Truck.png" alt="Truck Training">
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="container c1">
+            <div class="row">
+                <div class="col-lg-6 about-content ">
+                    <h1 class="paragraph10">More About Us</h1>
+                    <p class="paragraph11">We achieve excellence through our qualified 
+                    and specialized team, as well as a stimulating 
+                    learning environment that prepares drivers and 
+                    technicians for the modern transportation industry.</p>
+                </div>
+                <div class="col-lg-6 ceo-content ">
+                    <div class="container ">
+                        <div class="text-ceo">
+                            <h3 class="mb-3 paragraph12">Abdullah Alghamdi</h3>
+                            <p class="mb-2 paragraph13">CEO</p>
+                            <p class="text paragraph14">"Leading the transformation of professional driving education."</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row r-2 text-center">
+                <h1 class="paragraph15">Objectives</h1>
+                <div class="col-lg-4">
+                    <div class="container text-center">
+                        <h1 class="paragraph16">✓</h1>
+                        <h4 class="paragraph17">Aligning with Vision 2030</h4>
+                        <p  class="paragraph18">Contributing to the Kingdom's Vision 2030 by fostering training aligned with global standards</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="container text-center">
+                        <h1 class="paragraph19">✓</h1>
+                        <h4 class="paragraph20">Safety Enhancement</h4>
+                        <p class="paragraph21">Working towards enhanced safety standards in the truck driving industry</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="container text-center">
+                        <h1 class="paragraph22">✓</h1>
+                        <h4 class="paragraph23">Economic Contribution</h4>
+                        <p class="paragraph24">Bolstering the local economy by offering comprehensive training</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="container text-center">
+                        <h1 class="paragraph25">✓</h1>
+                        <h4 class="paragraph26">Expertise Development</h4>
+                        <p class="paragraph27">Elevating expertise and training levels in truck driving</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="container text-center">
+                        <h1>✓</h1>
+                        <h4>Perception Shift</h4>
+                        <p>Transforming the conventional perception of the truck driving profession</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="container text-center">
+                        <h1>✓</h1>
+                        <h4>Logistics Support</h4>
+                        <p>Strengthening the logistics sector to enhance supply chain efficiency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+
+</html>
+

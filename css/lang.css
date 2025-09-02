@@ -1,0 +1,158 @@
+
+.language-dropdown {
+    position: relative;
+    margin-right: 30px;
+    height: auto;
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #55ea43;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    outline: none;
+    
+}
+.nav-language
+{
+    position: relative;
+    left: 20px;
+}
+/* .dropdown-trigger:hover {
+    background-color: #055526;
+} */
+
+
+
+.globe-icon {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.chevron-icon {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-trigger.open .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    width: 200px;
+    background-color: #1a202c;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.dropdown-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    color: #a0aec0;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: left;
+}
+
+.language-option:hover {
+    background-color: #2d3748;
+    color: #ffffff;
+}
+
+.language-option.active {
+    background-color: #2d3748;
+    color: #48bb78;
+}
+
+.flag {
+    font-size: 18px;
+}
+
+.language-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-name {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.language-code {
+    font-size: 12px;
+    color: #718096;
+}
+
+/* Demo content */
+.demo-content {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: #1a202c;
+    border-radius: 12px;
+    color: #e2e8f0;
+    max-width: 600px;
+}
+
+.demo-content h1 {
+    color: #48bb78;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.demo-content p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* RTL styles for Arabic */
+[dir="rtl"] .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .demo-content {
+    text-align: right;
+}
