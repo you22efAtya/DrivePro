@@ -137,6 +137,7 @@
     font-size: 50px;
 }
 
+
 .about-section .r-2 .container
 {
     background-color: #1a2f2a;
@@ -152,6 +153,7 @@
     /* padding-bottom: 20px; */
 
 }
+
 .about-section .r-2 .container.animate {
     animation: slideInLeft 1.5s ease-out forwards;
 }
@@ -166,12 +168,13 @@
     }
 }
 
-.about-section .r-2 .container.container:hover
+.about-section .r-2 .container:hover
 {
     box-shadow: 0 0 25px rgb(40, 193, 14,0.8);
     /* border: 3px solid #55ea43; */
-    transform: translateY(-3px);
+    
 }
+
 .about-section .r-2 h4
 {
     color: white;
@@ -185,6 +188,19 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+.about-section .r-2 h1.arabic
+{
+    font-size: 65px;
+}
+.about-section .r-2 h4.arabic
+{
+    font-size: 25px;
+    
+}
+.about-section .r-2 p.arabic
+{
+    font-size: 18px;
 }
 
 
