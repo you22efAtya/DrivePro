@@ -201,7 +201,6 @@ p {
     box-shadow: 0 0 15px rgb(52, 235, 18,0.4);
     transition: all 0.3s ease;
     margin-right: 20px;
-    z-index: 1000 !important;
 }
 .buttons .b1:hover
 {

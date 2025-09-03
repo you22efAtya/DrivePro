@@ -2,6 +2,10 @@
 {
     background-image: linear-gradient(143deg, #213c36 0%, #0d1f1a 80%) !important;
 }
+.services-section.arabic
+{
+    direction: rtl;
+}
 
 .services-section .head p
 {
@@ -20,11 +24,10 @@
     margin-bottom: 100px;
 }
 
+
 .services-section .row .service
 {
     background-color: #0d1f1a;
-    padding-top: 50px;
-    padding-bottom: 50px;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -32,6 +35,38 @@
     position: relative;
     height: 280px;
     box-shadow: -0px 10px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0 ;
+    /* text-align: right; */
+}
+.services-section .row .service.animate
+{
+    animation: slideInLeft 1.2s ease-out forwards;
+}
+.services-section .row .service.animate2
+{
+    animation: slideInRight 1.2s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .services-section .row .service h3
 {
@@ -43,30 +78,69 @@
     color: #cccccc;
     width: 80%;
 }
-.services-section .row .service .image
+
+.service .row .image img
 {
-    position: relative;
-    width: 600px;
+    margin-right: 150px;
+    width:230px !important;
 }
-.services-section .row .service .image img
+
+.buttons .b3
 {
-    position: absolute;
-    width: 100%;
-    left: -300px;
-    top: -110px;
+    background-color: #34eb12;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgb(52, 235, 18,0.4);
+    transition: all 0.3s ease;
+    z-index: 1000 !important;
 }
-/* .services-section .row
+.buttons .b3:hover
 {
-    display: flex !important;
-    flex-direction: column !important;
-} */
-@media all and (min-width: 445px) and (max-width: 576px)
+    background-color: #34eb12;
+    box-shadow: 0 0 25px rgb(40, 193, 14,0.6);
+    transform: translateY(-3px);
+}
+
+.services-section .row .service.arabic
 {
-    .services-section .row .service h3
-    {
-        margin-top: 200px;
-        font-size: 22px;
-    }
+    /* height: ; */
+}
+
+.service .row .image img.arabic
+{
+    margin-left: 300px;
+    width:230px !important;
+}
+.services-section .head p.arabic
+{
+    font-size: 25px;
+
+    /* visibility: hidden; */
+}
+
+.services-section .head h1.arabic
+{
+   
+    font-size: 60px;
+    /* margin-bottom: 50px; */
+}
+.services-section .row .service h3.arabic
+{
+    font-weight: bold;
+    font-size: 35px;
+}
+.services-section .row .service p.arabic
+{
+    color: #cccccc;
+    width: 80%;
+    font-size: 20px;
+}
+@media all and (max-width: 445px)
+{
     .services-section .row .service p
     {
         margin-left: auto;
@@ -75,36 +149,23 @@
     }
     .services-section .row .service
     {
-        width: 90%;
+        width: 80%;
         margin-bottom: 110px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         padding-bottom: 120px;
-        height: 380px;
+        height: 500px;
     }
-    .services-section .row .service .row
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .services-section .row .service .image
-    {
-        position: relative;
-        width: 200px;
-        /* background-color: red; */
-    }
-    .services-section .row .service .image img
-    {
-        position: relative;
-        width: 100%;
-        /* left: 35px;
-        top: -40px; */
 
+    .services-section .row .service h3
+    {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 18px;
     }
+
     .services-section .head h1
     {
     
@@ -113,16 +174,71 @@
         letter-spacing: 5px;
         margin-bottom: 150px;
     }
+    .service .row .image img
+    {
+        margin-right: 0;
+        width:150px !important;
+    }
+    .service .row .image img.arabic
+    {
+        margin-left: 0px;
+        width:150px !important;
+    }
+}
 
+@media all and (min-width: 445px) and (max-width: 576px)
+{
+    .services-section .row .service p
+    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    .services-section .row .service
+    {
+        width: 80%;
+        margin-bottom: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 120px;
+        height: 380px;
+    }
+
+    .services-section .row .service h3
+    {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .services-section .head h1
+    {
+    
+        color: white;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-bottom: 150px;
+    }
+    .service .row .image img
+    {
+        margin-right: 0;
+        width:150px !important;
+    }
+    .service .row .image img.arabic
+    {
+        margin-left: 0px;
+        width:150px !important;
+    }
+    .services-section .row .service.arabic
+    {
+        height: 420px ; 
+    }
 }
 
 @media all and (min-width: 576px) and (max-width: 768px )
 {
-    .services-section .row .service h3
-    {
-        margin-top: 200px;
-        font-size: 22px;
-    }
     .services-section .row .service p
     {
         margin-left: auto;
@@ -131,7 +247,7 @@
     }
     .services-section .row .service
     {
-        width: 90%;
+        width: 80%;
         margin-bottom: 110px;
         display: flex;
         justify-content: center;
@@ -140,19 +256,14 @@
         padding-bottom: 120px;
         height: 380px;
     }
-    .services-section .row .service .image
-    {
-        position: relative;
-        width: 400px;
-    }
-    .services-section .row .service .image img
-    {
-        position: absolute;
-        width: 100%;
-        left: 35px;
-        top: -40px;
 
+    .services-section .row .service h3
+    {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 22px;
     }
+
     .services-section .head h1
     {
     
@@ -161,15 +272,25 @@
         letter-spacing: 5px;
         margin-bottom: 150px;
     }
+    .service .row .image img
+    {
+        margin-right: 0;
+        width:150px !important;
+    }
+    .services-section .row .service .service-content.arabic
+    {
+        padding-right: 0px;
+    }
+    .service .row .image img.arabic
+    {
+        margin-left: 0px;
+        width:150px !important;
+    }
+  
 }
 
 @media all and (min-width: 768px) and (max-width: 992px  )
 {
-    .services-section .row .service h3
-    {
-        margin-top: 150px;
-        font-size: 25px;
-    }
     .services-section .row .service p
     {
         margin-left: auto;
@@ -178,32 +299,72 @@
     }
     .services-section .row .service
     {
-        width: 90%;
-        margin-bottom: 140px;
+        width: 80%;
+        margin-bottom: 110px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         padding-bottom: 120px;
+        height: 380px;
     }
-    .services-section .row .service .image
+
+    .services-section .row .service h3
     {
-        position: relative;
-        width: 400px;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 25px;
     }
-    .services-section .row .service .image img
-    {
-        position: absolute;
-        width: 100%;
-        left: 109px;
-        top: -80px;
-    }
+
     .services-section .head h1
     {
     
         color: white;
         font-weight: bold;
         letter-spacing: 5px;
-        margin-bottom: 200px;
+        margin-bottom: 150px;
     }
+    .service .row .image img
+    {
+        margin-right: 0;
+        width:190px !important;
+    }
+    .services-section .row .service .service-content.arabic
+    {
+        padding-right: 0px;
+    }
+    .service .row .image img.arabic
+    {
+        margin-left: 0px;
+        width:190px !important;
+    }
+  
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px  )
+{
+    
+    .services-section .row .service h3
+    {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+   .service .row .image img
+    {
+        margin-right: 85px;
+        width:190px !important;
+    }
+    /* .services-section .row .service .service-content.arabic
+    {
+        padding-right: 50px;
+    } */
+    .service .row .image img.arabic
+    {
+        margin-left: 200px;
+        width:190px !important;
+    }
+    
+
+
 }
