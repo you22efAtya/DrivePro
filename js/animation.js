@@ -41,3 +41,9 @@ document.querySelectorAll(".services-section .row .service").forEach(el => {
   }
   counter+=1;
 });
+
+document.querySelectorAll(".kpi-card").forEach(el => {
+
+    observer.observe(el);
+
+});

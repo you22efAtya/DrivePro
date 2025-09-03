@@ -1,0 +1,75 @@
+.kpi-section
+{
+    background-image: linear-gradient(rgba(56, 80, 73,0.96), rgba(56, 80, 73,0.96)), url(../images/Cars.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-block: 100px;
+}
+.kpi-section .kpi-head h1
+{
+    color: white;
+    font-weight: bold;
+    font-size: 55px;
+}
+.kpi-card
+{
+    background-color: #234237;
+    padding-block: 50px;
+    border-radius: 20px;
+    border: 2px solid #39ff14;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    height: 210px;
+    
+}
+.kpi-card.animate
+{
+    animation: kpiAnumation 1.2s ease-out forwards;
+}
+
+
+@keyframes kpiAnumation {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.kpi-section .col-lg-3
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.kpi-card h1
+{
+    /*7dff6b*/
+    background: linear-gradient(90deg, #7dff6b , #39ff14 90%);
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent;
+    background-clip: text;  
+    color: transparent;     
+    text-shadow: 0 0 25px rgb(57, 255, 20,0.8);
+    font-size: 55px;
+    font-weight: bold;
+    
+}
+
+.kpi-card p
+{
+    font-size: 15px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.kpi-card p.arabic
+{
+    font-size: 21px;
+}

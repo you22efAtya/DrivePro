@@ -51,7 +51,12 @@
           paragraph39: "READ MORE",
           paragraph40: "Evaluating drivers before hiring",
           paragraph41: "We provide a specialized team to evaluate drivers of heavy equipment and vehicles, ensuring professionalism, safety adherence, and reliable cargo delivery. This ensures the safe and reliable delivery of goods.",
-          paragraph42: "READ MORE"
+          paragraph42: "READ MORE",
+          paragraph44: "Our KPI in 2026",
+          paragraph45: "Truck Driving Training",
+          paragraph46: "Equipment Operation Training",
+          paragraph47: "Training Consultations",
+          paragraph48: "Professional Competency Tests"
         },
 
         ar: {
@@ -100,7 +105,12 @@
           paragraph39: "اقرأ المزيد",
           paragraph40: "تقييم السائقين قبل التوظيف",
           paragraph41: "نوفر فريقاً متخصصاً لتقييم سائقي المعدات الثقيلة والمركبات، لضمان الاحترافية والالتزام بالسلامة وتوصيل البضائع بشكل موثوق. هذا يضمن تسليم البضائع بأمان وموثوقية.",
-          paragraph42: "اقرأ المزيد"
+          paragraph42: "اقرأ المزيد",
+          paragraph44: "الأرقام المستهدفة في 2025",
+          paragraph45: "تدريب قيادة الشاحنات",
+          paragraph46: "تدريب تشغيل المعدات",
+          paragraph47: "استشارات تدريبيه",
+          paragraph48: "اختبارات كفاءة مهنيه"
         }
     }
 
@@ -170,6 +180,9 @@
       document.querySelectorAll(".services-section .row .service").forEach(el => {
         el.classList.add("arabic");
       });
+      document.querySelectorAll(".kpi-card p").forEach(el => {
+        el.classList.add("arabic");
+      });
 
 
 
@@ -216,6 +229,9 @@
         el.classList.remove("arabic");
       });
       document.querySelectorAll(".services-section .row .service").forEach(el => {
+        el.classList.remove("arabic");
+      });
+      document.querySelectorAll(".kpi-card p").forEach(el => {
         el.classList.remove("arabic");
       });
   }
@@ -265,18 +281,25 @@
       document.querySelector(".paragraph40").textContent = translations[lang].paragraph40;
       document.querySelector(".paragraph41").textContent = translations[lang].paragraph41;
       document.querySelector(".paragraph42").textContent = translations[lang].paragraph42;
+      document.querySelector(".paragraph45").textContent = translations[lang].paragraph45;
+      document.querySelector(".paragraph46").textContent = translations[lang].paragraph46;
+      document.querySelector(".paragraph47").textContent = translations[lang].paragraph47;
+      document.querySelector(".paragraph48").textContent = translations[lang].paragraph48;
 
       let head = document.querySelector(".paragraph28");
+      let kpiHead = document.querySelector(".paragraph44");
       if(lang === 'ar') 
       {
         head.innerHTML = `<span class="paragraph29" style="color: #39ff14;">خدماتنا</span> وما <span class="paragraph30" style="color: #39ff14;">نقدمه</span>`
-          changeCssPropertiesForArabic();
+        kpiHead.innerHTML = ` <h1 class="paragraph44">الارقام <span style="color: #39ff14;">المستهدفة</span> في <span style="color: #39ff14;">2026</span></h1>`
+        changeCssPropertiesForArabic();
       }
       else
       {
-        head.innerHTML = `Our <span class="paragraph29" style="color: #39ff14;">Services</span>
+          head.innerHTML = `Our <span class="paragraph29" style="color: #39ff14;">Services</span>
                      What We <span
                 class="paragraph30" style="color: #39ff14;">Provide</span>`
+          kpiHead.innerHTML = `<h1 class="paragraph44">Our <span style="color: #39ff14;">KPI</span> in <span style="color: #39ff14;">2026</span></h1>`
           changeCssPropertiesForEnglish();
       }
       document.querySelectorAll(".language-option").forEach(opt => opt.classList.toggle("active"));
