@@ -2,117 +2,144 @@
   let currentClickeTrigger;
    // Example translations
     const translations = {
-        en: {
-          paragraph1: "LEARN TO DRIVE",
-          paragraph2: "Drive With Truck Safety And Control",
-          paragraph3: `We are a specialized training center that focuses on heavy truck 
-              driving and heavy equipment maintenance and operation. 
-              Our high-quality training programs aim to develop the skills of 
-              drivers and technicians through our qualified and
-              experienced instructors.`,
-          paragraph4: "Start Your Journy",
-          paragraph5: "Our Programs",
-          paragraph6: "Home",
-          paragraph7: "About Us",
-          paragraph8: "Services",
-          paragraph9: "Contact",
-          paragraph10: "More About Us",
-          paragraph11: `We achieve excellence through our qualified 
-                          and specialized team, as well as a stimulating 
-                          learning environment that prepares drivers and 
-                          technicians for the modern transportation industry.`,
-          paragraph12: "Abdullah Alghamdi",
-          paragraph13: "CEO",
-          paragraph14: "Leading the transformation of professional driving education.",
+  en: {
+    paragraph1: "LEARN TO DRIVE",
+    paragraph2: "Drive With Truck Safety And Control",
+    paragraph3: `We are a specialized training center that focuses on heavy truck 
+        driving and heavy equipment maintenance and operation. 
+        Our high-quality training programs aim to develop the skills of 
+        drivers and technicians through our qualified and
+        experienced instructors.`,
+    paragraph4: "Start Your Journy",
+    paragraph5: "Our Programs",
+    paragraph6: "Home",
+    paragraph7: "About Us",
+    paragraph8: "Services",
+    paragraph9: "Contact",
+    paragraph10: "More About Us",
+    paragraph11: `We achieve excellence through our qualified 
+                    and specialized team, as well as a stimulating 
+                    learning environment that prepares drivers and 
+                    technicians for the modern transportation industry.`,
+    paragraph12: "Abdullah Alghamdi",
+    paragraph13: "CEO",
+    paragraph14: "\"Leading the transformation of professional driving education.\"",
 
-          // Newly added translations
-          paragraph15: "Objectives",
-          paragraph16: "Aligning with Vision 2030",
-          paragraph17: "Contributing to the Kingdom's Vision 2030 by fostering training aligned with global standards",
-          paragraph18: "Safety Enhancement",
-          paragraph19: "Working towards enhanced safety standards in the truck driving industry",
-          paragraph20: "Economic Contribution",
-          paragraph21: "Bolstering the local economy by offering comprehensive training",
-          paragraph22: "Expertise Development",
-          paragraph23: "Elevating expertise and training levels in truck driving",
-          paragraph24: "Perception Shift",
-          paragraph25: "Transforming the conventional perception of the truck driving profession",
-          paragraph26: "Logistics Support",
-          paragraph27: "Strengthening the logistics sector to enhance supply chain efficiency",
-          paragraph43: "OUR SERVICES",
-          paragraph31: "Truck and Equipment Driving Training",
-          paragraph32: "Our training covers both theory and practical aspects of safe heavy truck and vehicle driving, emphasizing economical driving techniques and modern safety systems for driver and environmental protection.",
-          paragraph33: "READ MORE",
-          paragraph34: "Preparation for Heavy Truck Driver License",
-          paragraph35: "We prepare individuals for heavy truck, bus driving license tests, and equipment operation by employing qualified trainers and providing necessary equipment, ensuring compliance with safety standards and local regulations.",
-          paragraph36: "READ MORE",
-          paragraph37: "Provide drivers to companies in KSA.",
-          paragraph38: "We provide professional drivers and heavy equipment operators to companies in Saudi Arabia on demand, meeting diverse sector needs, efficiently streamlining recruitment, enhancing project efficiency, and adapting to market demands.",
-          paragraph39: "READ MORE",
-          paragraph40: "Evaluating drivers before hiring",
-          paragraph41: "We provide a specialized team to evaluate drivers of heavy equipment and vehicles, ensuring professionalism, safety adherence, and reliable cargo delivery. This ensures the safe and reliable delivery of goods.",
-          paragraph42: "READ MORE",
-          paragraph44: "Our KPI in 2026",
-          paragraph45: "Truck Driving Training",
-          paragraph46: "Equipment Operation Training",
-          paragraph47: "Training Consultations",
-          paragraph48: "Professional Competency Tests"
-        },
+    // Newly added translations
+    paragraph15: "Objectives",
+    paragraph16: "Aligning with Vision 2030",
+    paragraph17: "Contributing to the Kingdom's Vision 2030 by fostering training aligned with global standards",
+    paragraph18: "Safety Enhancement",
+    paragraph19: "Working towards enhanced safety standards in the truck driving industry",
+    paragraph20: "Economic Contribution",
+    paragraph21: "Bolstering the local economy by offering comprehensive training",
+    paragraph22: "Expertise Development",
+    paragraph23: "Elevating expertise and training levels in truck driving",
+    paragraph24: "Perception Shift",
+    paragraph25: "Transforming the conventional perception of the truck driving profession",
+    paragraph26: "Logistics Support",
+    paragraph27: "Strengthening the logistics sector to enhance supply chain efficiency",
+    paragraph43: "OUR SERVICES",
+    paragraph31: "Truck and Equipment Driving Training",
+    paragraph32: "Our training covers both theory and practical aspects of safe heavy truck and vehicle driving, emphasizing economical driving techniques and modern safety systems for driver and environmental protection.",
+    paragraph33: "READ MORE",
+    paragraph34: "Preparation for Heavy Truck Driver License",
+    paragraph35: "We prepare individuals for heavy truck, bus driving license tests, and equipment operation by employing qualified trainers and providing necessary equipment, ensuring compliance with safety standards and local regulations.",
+    paragraph36: "READ MORE",
+    paragraph37: "Provide drivers to companies in KSA.",
+    paragraph38: "We provide professional drivers and heavy equipment operators to companies in Saudi Arabia on demand, meeting diverse sector needs, efficiently streamlining recruitment, enhancing project efficiency, and adapting to market demands.",
+    paragraph39: "READ MORE",
+    paragraph40: "Evaluating drivers before hiring",
+    paragraph41: "We provide a specialized team to evaluate drivers of heavy equipment and vehicles, ensuring professionalism, safety adherence, and reliable cargo delivery. This ensures the safe and reliable delivery of goods.",
+    paragraph42: "READ MORE",
+    paragraph44: "Our KPI in 2026",
+    paragraph45: "Truck Driving Training",
+    paragraph46: "Equipment Operation Training",
+    paragraph47: "Training Consultations",
+    paragraph48: "Professional Competency Tests",
 
-        ar: {
-          paragraph1: "تعلم قيادة الشاحنات",
-          paragraph2: "قد بأمان وتحكم بالشاحنات",
-          paragraph3: `نحن مركز تدريب متخصص يركز على قيادة
-              الشاحنات الثقيلة وصيانة وتشغيل المعدات الثقيلة.
-              تهدف برامجنا التدريبية عالية الجودة إلى تطوير مهارات
-              السائقين والفنيين من خلال مدربينا المؤهلين وذوي الخبرة.`,
-          paragraph4: "ابدأ رحلتك",
-          paragraph5: "برامجنا",
-          paragraph6: "الرئيسية",
-          paragraph7: "من نحن",
-          paragraph8: "خدماتنا",
-          paragraph9: "اتصل بنا",
-          paragraph10: "المزيد عنّا",
-          paragraph11: `نحقق التميز من خلال فريقنا المؤهل والمتخصص، بالإضافة إلى بيئة 
-              تعليمية محفزة تجهز السائقين والفنيين لصناعة النقل`,
-          paragraph12: "عبدالله الغامدي",
-          paragraph13: "مدير تنفيذي",
-          paragraph14: "الريادة في تحويل تعليم القيادة الاحترافية.",
+    // Added for WHY CHOOSE US
+    paragraph49: "WHY CHOOSE US?",
+    paragraph50: "Start <span style=\"color: #39ff14;\">The Drive</span> Learning <span style=\"color: #39ff14;\">Process</span>",
+    paragraph51: "Because We are a real opportunity for the student, a specialized training center offering exceptional opportunities to learn heavy truck driving and heavy equipment maintenance and operation skills.",
+    paragraph52: "100% Safe",
+    paragraph53: "Delivering heavy truck and equipment driving courses with a 100% safety assurance.",
+    paragraph54: "Flexible timing",
+    paragraph55: "Providing courses with flexible scheduling options to accommodate your needs and busy lifestyle.",
+    paragraph56: "Affordable Rate",
+    paragraph57: "Delivering high-quality training at an affordable rate, making professional development accessible to all.",
+    paragraph58: "24/7 Support",
+    paragraph59: "Ensuring round-the-clock support to address any inquiries or concerns, offering peace of mind."
+  },
 
-          // Newly added translations
-          paragraph15: "أهدافنا",
-          paragraph16: "التوافق مع رؤية 2030",
-          paragraph17: "المساهمة في رؤية المملكة 2030 من خلال تعزيز التدريب المتوافق مع المعايير العالمية",
-          paragraph18: "تعزيز السلامة",
-          paragraph19: "العمل نحو رفع معايير السلامة في مجال قيادة الشاحنات",
-          paragraph20: "المساهمة الاقتصادية",
-          paragraph21: "دعم الاقتصاد المحلي من خلال تقديم برامج تدريبية شاملة",
-          paragraph22: "تطوير الخبرات",
-          paragraph23: "رفع مستوى الخبرة والتدريب في قيادة الشاحنات",
-          paragraph24: "تغيير الصورة النمطية",
-          paragraph25: "تحويل النظرة التقليدية لمهنة قيادة الشاحنات",
-          paragraph26: "دعم قطاع اللوجستيات",
-          paragraph27: "تعزيز قطاع الخدمات اللوجستية لرفع كفاءة سلاسل الإمداد",
-          paragraph43: "خدماتنا",
-          paragraph31: "تدريب قيادة الشاحنات والمعدات",
-          paragraph32: "يشمل تدريبنا الجوانب النظرية والعملية لقيادة الشاحنات والمركبات الثقيلة بأمان، مع التركيز على تقنيات القيادة الاقتصادية وأنظمة السلامة الحديثة لحماية السائق والبيئة.",
-          paragraph33: "اقرأ المزيد",
-          paragraph34: "التحضير لرخصة قيادة الشاحنات الثقيلة",
-          paragraph35: "نقوم بإعداد الأفراد لاختبارات رخصة قيادة الشاحنات والحافلات وتشغيل المعدات من خلال مدربين مؤهلين وتوفير المعدات اللازمة، مع ضمان الامتثال لمعايير السلامة والأنظمة المحلية.",
-          paragraph36: "اقرأ المزيد",
-          paragraph37: "توفير سائقين للشركات في السعودية",
-          paragraph38: "نوفر سائقين محترفين ومشغلي معدات ثقيلة للشركات في المملكة العربية السعودية عند الطلب، لتلبية احتياجات مختلف القطاعات، وتبسيط التوظيف بكفاءة، وتعزيز كفاءة المشاريع، والتكيف مع متطلبات السوق.",
-          paragraph39: "اقرأ المزيد",
-          paragraph40: "تقييم السائقين قبل التوظيف",
-          paragraph41: "نوفر فريقاً متخصصاً لتقييم سائقي المعدات الثقيلة والمركبات، لضمان الاحترافية والالتزام بالسلامة وتوصيل البضائع بشكل موثوق. هذا يضمن تسليم البضائع بأمان وموثوقية.",
-          paragraph42: "اقرأ المزيد",
-          paragraph44: "الأرقام المستهدفة في 2025",
-          paragraph45: "تدريب قيادة الشاحنات",
-          paragraph46: "تدريب تشغيل المعدات",
-          paragraph47: "استشارات تدريبيه",
-          paragraph48: "اختبارات كفاءة مهنيه"
-        }
-    }
+  ar: {
+    paragraph1: "تعلم قيادة الشاحنات",
+    paragraph2: "قد بأمان وتحكم بالشاحنات",
+    paragraph3: `نحن مركز تدريب متخصص يركز على قيادة
+        الشاحنات الثقيلة وصيانة وتشغيل المعدات الثقيلة.
+        تهدف برامجنا التدريبية عالية الجودة إلى تطوير مهارات
+        السائقين والفنيين من خلال مدربينا المؤهلين وذوي الخبرة.`,
+    paragraph4: "ابدأ رحلتك",
+    paragraph5: "برامجنا",
+    paragraph6: "الرئيسية",
+    paragraph7: "من نحن",
+    paragraph8: "خدماتنا",
+    paragraph9: "اتصل بنا",
+    paragraph10: "المزيد عنّا",
+    paragraph11: `نحقق التميز من خلال فريقنا المؤهل والمتخصص، بالإضافة إلى بيئة 
+        تعليمية محفزة تجهز السائقين والفنيين لصناعة النقل`,
+    paragraph12: "عبدالله الغامدي",
+    paragraph13: "مدير تنفيذي",
+    paragraph14: "\"الريادة في تحويل تعليم القيادة الاحترافية.\"",
+
+    // Newly added translations
+    paragraph15: "أهدافنا",
+    paragraph16: "التوافق مع رؤية 2030",
+    paragraph17: "المساهمة في رؤية المملكة 2030 من خلال تعزيز التدريب المتوافق مع المعايير العالمية",
+    paragraph18: "تعزيز السلامة",
+    paragraph19: "العمل نحو رفع معايير السلامة في مجال قيادة الشاحنات",
+    paragraph20: "المساهمة الاقتصادية",
+    paragraph21: "دعم الاقتصاد المحلي من خلال تقديم برامج تدريبية شاملة",
+    paragraph22: "تطوير الخبرات",
+    paragraph23: "رفع مستوى الخبرة والتدريب في قيادة الشاحنات",
+    paragraph24: "تغيير الصورة النمطية",
+    paragraph25: "تحويل النظرة التقليدية لمهنة قيادة الشاحنات",
+    paragraph26: "دعم قطاع اللوجستيات",
+    paragraph27: "تعزيز قطاع الخدمات اللوجستية لرفع كفاءة سلاسل الإمداد",
+    paragraph43: "خدماتنا",
+    paragraph31: "تدريب قيادة الشاحنات والمعدات",
+    paragraph32: "يشمل تدريبنا الجوانب النظرية والعملية لقيادة الشاحنات والمركبات الثقيلة بأمان، مع التركيز على تقنيات القيادة الاقتصادية وأنظمة السلامة الحديثة لحماية السائق والبيئة.",
+    paragraph33: "اقرأ المزيد",
+    paragraph34: "التحضير لرخصة قيادة الشاحنات الثقيلة",
+    paragraph35: "نقوم بإعداد الأفراد لاختبارات رخصة قيادة الشاحنات والحافلات وتشغيل المعدات من خلال مدربين مؤهلين وتوفير المعدات اللازمة، مع ضمان الامتثال لمعايير السلامة والأنظمة المحلية.",
+    paragraph36: "اقرأ المزيد",
+    paragraph37: "توفير سائقين للشركات في السعودية",
+    paragraph38: "نوفر سائقين محترفين ومشغلي معدات ثقيلة للشركات في المملكة العربية السعودية عند الطلب، لتلبية احتياجات مختلف القطاعات، وتبسيط التوظيف بكفاءة، وتعزيز كفاءة المشاريع، والتكيف مع متطلبات السوق.",
+    paragraph39: "اقرأ المزيد",
+    paragraph40: "تقييم السائقين قبل التوظيف",
+    paragraph41: "نوفر فريقاً متخصصاً لتقييم سائقي المعدات الثقيلة والمركبات، لضمان الاحترافية والالتزام بالسلامة وتوصيل البضائع بشكل موثوق. هذا يضمن تسليم البضائع بأمان وموثوقية.",
+    paragraph42: "اقرأ المزيد",
+    paragraph44: "الأرقام المستهدفة في 2025",
+    paragraph45: "تدريب قيادة الشاحنات",
+    paragraph46: "تدريب تشغيل المعدات",
+    paragraph47: "استشارات تدريبيه",
+    paragraph48: "اختبارات كفاءة مهنيه",
+
+    // Added for WHY CHOOSE US
+    paragraph49: "لماذا تختارنا؟",
+    paragraph50: "ابدأ <span style=\"color: #39ff14;\">رحلة القيادة</span> وتعلم <span style=\"color: #39ff14;\">المهارات</span>",
+    paragraph51: "لأننا فرصة حقيقية للطالب، نحن مركز تدريب متخصص يقدم فرصاً استثنائية لتعلم قيادة الشاحنات الثقيلة وصيانة وتشغيل المعدات الثقيلة.",
+    paragraph52: "100% آمن",
+    paragraph53: "نقدم دورات في قيادة الشاحنات والمعدات الثقيلة مع ضمان سلامة بنسبة 100%.",
+    paragraph54: "مواعيد مرنة",
+    paragraph55: "نوفر دورات بجدول مرن لتناسب احتياجاتك وأسلوب حياتك المزدحم.",
+    paragraph56: "أسعار مناسبة",
+    paragraph57: "نقدم تدريباً عالي الجودة بأسعار مناسبة، مما يجعل التطوير المهني متاحاً للجميع.",
+    paragraph58: "دعم 24/7",
+    paragraph59: "نضمن دعماً متواصلاً على مدار الساعة للرد على أي استفسارات أو مخاوف، مما يوفر راحة البال."
+  }
+};
+
 
 
   // Toggle menu on trigger click
@@ -183,6 +210,18 @@
       document.querySelectorAll(".kpi-card p").forEach(el => {
         el.classList.add("arabic");
       });
+      document.querySelectorAll(".why-card p").forEach(el => {
+        el.classList.add("arabic");
+      });
+      document.querySelectorAll(".whyus-section .whyus-head .p1").forEach(el => {
+        el.classList.add("arabic");
+      });
+      document.querySelectorAll(".whyus-section .whyus-head .p2").forEach(el => {
+        el.classList.add("arabic");
+      });
+      document.querySelectorAll(".whyus-section .whyus-head h1").forEach(el => {
+        el.classList.add("arabic");
+      });
 
 
 
@@ -232,6 +271,18 @@
         el.classList.remove("arabic");
       });
       document.querySelectorAll(".kpi-card p").forEach(el => {
+        el.classList.remove("arabic");
+      });
+      document.querySelectorAll(".why-card p").forEach(el => {
+        el.classList.remove("arabic");
+      });
+      document.querySelectorAll(".whyus-section .whyus-head .p1").forEach(el => {
+        el.classList.remove("arabic");
+      });
+      document.querySelectorAll(".whyus-section .whyus-head .p2").forEach(el => {
+        el.classList.remove("arabic");
+      });
+      document.querySelectorAll(".whyus-section .whyus-head h1").forEach(el => {
         el.classList.remove("arabic");
       });
   }
@@ -285,6 +336,18 @@
       document.querySelector(".paragraph46").textContent = translations[lang].paragraph46;
       document.querySelector(".paragraph47").textContent = translations[lang].paragraph47;
       document.querySelector(".paragraph48").textContent = translations[lang].paragraph48;
+      document.querySelector(".paragraph49").textContent = translations[lang].paragraph49;
+      document.querySelector(".paragraph50").innerHTML   = translations[lang].paragraph50; // has <span>
+      document.querySelector(".paragraph51").textContent = translations[lang].paragraph51;
+      document.querySelector(".paragraph52").textContent = translations[lang].paragraph52;
+      document.querySelector(".paragraph53").textContent = translations[lang].paragraph53;
+      document.querySelector(".paragraph54").textContent = translations[lang].paragraph54;
+      document.querySelector(".paragraph55").textContent = translations[lang].paragraph55;
+      document.querySelector(".paragraph56").textContent = translations[lang].paragraph56;
+      document.querySelector(".paragraph57").textContent = translations[lang].paragraph57;
+      document.querySelector(".paragraph58").textContent = translations[lang].paragraph58;
+      document.querySelector(".paragraph59").textContent = translations[lang].paragraph59;
+
 
       let head = document.querySelector(".paragraph28");
       let kpiHead = document.querySelector(".paragraph44");

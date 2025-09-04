@@ -47,3 +47,8 @@ document.querySelectorAll(".kpi-card").forEach(el => {
     observer.observe(el);
 
 });
+document.querySelectorAll(".why-card").forEach(el => {
+
+    observer.observe(el);
+
+});
