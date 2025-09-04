@@ -70,7 +70,24 @@
     paragraph57: "Delivering high-quality training at an affordable rate, making professional development accessible to all.",
     paragraph58: "24/7 Support",
     paragraph59: "Ensuring round-the-clock support to address any inquiries or concerns, offering peace of mind.",
-    paragraph60:"Target Customers"
+    paragraph60:"Target Customers",
+    paragraph61: "Professional driving services in Saudi Arabia. We provide quality driving education and services.",
+    paragraph62: "Quick Links",
+    paragraph63: `<li class=""><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                  <li><a href="#"><i class="fas fa-car-side"></i> SAEF Driving</a></li>
+                  <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                  <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>`,
+    paragraph64: "Contact Info",
+    paragraph65: `<p><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p>
+                  <p><i class="fas fa-phone"></i> +966-559-796-955</p>
+                  <p><i class="fas fa-envelope"></i> info@drivingpro.net</p>`,
+    paragraph66: "Services",
+    paragraph67: `<li><a href="#">Truck and Equipment Driving Training</a></li>
+                  <li><a href="#">Preparation for Heavy Truck</a></li>
+                  <li><a href="#">Provide drivers to companies</a></li>
+                  <li><a href="#">Evaluating drivers before hiring</a></li>`,
+    paragraph68: "&copy; 2023 DrivePro. All Rights Reserved."
+
   },
 
   ar: {
@@ -138,7 +155,23 @@
     paragraph57: "نقدم تدريباً عالي الجودة بأسعار مناسبة، مما يجعل التطوير المهني متاحاً للجميع.",
     paragraph58: "دعم 24/7",
     paragraph59: "نضمن دعماً متواصلاً على مدار الساعة للرد على أي استفسارات أو مخاوف، مما يوفر راحة البال.",
-    paragraph60:"العملاء المستهدفون"
+    paragraph60:"العملاء المستهدفون",
+    paragraph61: "خدمات قيادة محترفة في المملكة العربية السعودية. نقدم تعليم وخدمات قيادة عالية الجودة.",
+    paragraph62: "روابط سريعة",
+    paragraph63: `<li class=""><a href="#"><i class="fas fa-home"></i> الرئيسية</a></li>
+                  <li><a href="#"><i class="fas fa-car-side"></i> قيادة سايف</a></li>
+                  <li><a href="#"><i class="fas fa-info-circle"></i> عن الشركة</a></li>
+                  <li><a href="#"><i class="fas fa-phone"></i> اتصل بنا</a></li>`,
+    paragraph64: "معلومات الاتصال",
+    paragraph65: `<p><i class="fas fa-map-marker-alt"></i> جدة، المملكة العربية السعودية</p>
+                  <p><i class="fas fa-phone"></i> +966-559-796-955</p>
+                  <p><i class="fas fa-envelope"></i> info@drivingpro.net</p>`,
+    paragraph66: "خدماتنا",
+    paragraph67: `<li><a href="#">تدريب قيادة الشاحنات والمعدات</a></li>
+                  <li><a href="#">التحضير للشاحنات الثقيلة</a></li>
+                  <li><a href="#">توفير سائقين للشركات</a></li>
+                  <li><a href="#">تقييم السائقين قبل التوظيف</a></li>`,
+    paragraph68: "&copy; 2023 درايف برو. جميع الحقوق محفوظة."
   }
 };
 
@@ -350,6 +383,14 @@
       document.querySelector(".paragraph58").textContent = translations[lang].paragraph58;
       document.querySelector(".paragraph59").textContent = translations[lang].paragraph59;
       document.querySelector(".paragraph60").textContent = translations[lang].paragraph60;
+      document.querySelector(".paragraph61").textContent = translations[lang].paragraph61;
+      document.querySelector(".paragraph62").textContent = translations[lang].paragraph62;
+      document.querySelector(".paragraph63").innerHTML = translations[lang].paragraph63;
+      document.querySelector(".paragraph64").textContent = translations[lang].paragraph64;
+      document.querySelector(".paragraph65").innerHTML = translations[lang].paragraph65;
+      document.querySelector(".paragraph66").textContent = translations[lang].paragraph66;
+      document.querySelector(".paragraph67").innerHTML = translations[lang].paragraph67;
+      document.querySelector(".paragraph68").textContent = translations[lang].paragraph68;
 
 
       let head = document.querySelector(".paragraph28");

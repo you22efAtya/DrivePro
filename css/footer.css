@@ -10,6 +10,7 @@
     padding: 40px 0 20px;
 }
 
+
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -47,6 +48,7 @@
     height: 2px;
     background-color: #55ea43;
 }
+
 
 .footer-links {
     list-style: none;
@@ -112,6 +114,7 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        
     }
     .footer-heading:after 
     {
@@ -131,5 +134,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .footer-head p
+    {
+        width: 80%;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 }
