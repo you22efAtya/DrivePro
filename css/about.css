@@ -456,3 +456,16 @@
 
 
 }
+
+@media all and (min-width: 1200px) and (max-width: 1400px )
+{
+    
+    
+    .about-section .r-2 .container
+    {
+        height: 340px;
+    }
+    
+
+
+}
