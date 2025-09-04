@@ -60,7 +60,7 @@
 
     // Added for WHY CHOOSE US
     paragraph49: "WHY CHOOSE US?",
-    paragraph50: "Start <span style=\"color: #39ff14;\">The Drive</span> Learning <span style=\"color: #39ff14;\">Process</span>",
+    paragraph50: "Start <span style=\"color: #55ea43;\">The Drive</span> Learning <span style=\"color: #55ea43;\">Process</span>",
     paragraph51: "Because We are a real opportunity for the student, a specialized training center offering exceptional opportunities to learn heavy truck driving and heavy equipment maintenance and operation skills.",
     paragraph52: "100% Safe",
     paragraph53: "Delivering heavy truck and equipment driving courses with a 100% safety assurance.",
@@ -69,7 +69,8 @@
     paragraph56: "Affordable Rate",
     paragraph57: "Delivering high-quality training at an affordable rate, making professional development accessible to all.",
     paragraph58: "24/7 Support",
-    paragraph59: "Ensuring round-the-clock support to address any inquiries or concerns, offering peace of mind."
+    paragraph59: "Ensuring round-the-clock support to address any inquiries or concerns, offering peace of mind.",
+    paragraph60:"Target Customers"
   },
 
   ar: {
@@ -127,7 +128,7 @@
 
     // Added for WHY CHOOSE US
     paragraph49: "لماذا تختارنا؟",
-    paragraph50: "ابدأ <span style=\"color: #39ff14;\">رحلة القيادة</span> وتعلم <span style=\"color: #39ff14;\">المهارات</span>",
+    paragraph50: "ابدأ <span style=\"color: #55ea43;\">رحلة القيادة</span> وتعلم <span style=\"color: #55ea43;\">المهارات</span>",
     paragraph51: "لأننا فرصة حقيقية للطالب، نحن مركز تدريب متخصص يقدم فرصاً استثنائية لتعلم قيادة الشاحنات الثقيلة وصيانة وتشغيل المعدات الثقيلة.",
     paragraph52: "100% آمن",
     paragraph53: "نقدم دورات في قيادة الشاحنات والمعدات الثقيلة مع ضمان سلامة بنسبة 100%.",
@@ -136,7 +137,8 @@
     paragraph56: "أسعار مناسبة",
     paragraph57: "نقدم تدريباً عالي الجودة بأسعار مناسبة، مما يجعل التطوير المهني متاحاً للجميع.",
     paragraph58: "دعم 24/7",
-    paragraph59: "نضمن دعماً متواصلاً على مدار الساعة للرد على أي استفسارات أو مخاوف، مما يوفر راحة البال."
+    paragraph59: "نضمن دعماً متواصلاً على مدار الساعة للرد على أي استفسارات أو مخاوف، مما يوفر راحة البال.",
+    paragraph60:"العملاء المستهدفون"
   }
 };
 
@@ -347,22 +349,23 @@
       document.querySelector(".paragraph57").textContent = translations[lang].paragraph57;
       document.querySelector(".paragraph58").textContent = translations[lang].paragraph58;
       document.querySelector(".paragraph59").textContent = translations[lang].paragraph59;
+      document.querySelector(".paragraph60").textContent = translations[lang].paragraph60;
 
 
       let head = document.querySelector(".paragraph28");
       let kpiHead = document.querySelector(".paragraph44");
       if(lang === 'ar') 
       {
-        head.innerHTML = `<span class="paragraph29" style="color: #39ff14;">خدماتنا</span> وما <span class="paragraph30" style="color: #39ff14;">نقدمه</span>`
-        kpiHead.innerHTML = ` <h1 class="paragraph44">الارقام <span style="color: #39ff14;">المستهدفة</span> في <span style="color: #39ff14;">2026</span></h1>`
+        head.innerHTML = `<span class="paragraph29" style="color: #55ea43;">خدماتنا</span> وما <span class="paragraph30" style="color: #55ea43;">نقدمه</span>`
+        kpiHead.innerHTML = ` <h1 class="paragraph44">الارقام <span style="color: #55ea43;">المستهدفة</span> في <span style="color: #55ea43;">2026</span></h1>`
         changeCssPropertiesForArabic();
       }
       else
       {
-          head.innerHTML = `Our <span class="paragraph29" style="color: #39ff14;">Services</span>
+          head.innerHTML = `Our <span class="paragraph29" style="color: #55ea43;">Services</span>
                      What We <span
-                class="paragraph30" style="color: #39ff14;">Provide</span>`
-          kpiHead.innerHTML = `<h1 class="paragraph44">Our <span style="color: #39ff14;">KPI</span> in <span style="color: #39ff14;">2026</span></h1>`
+                class="paragraph30" style="color: #55ea43;">Provide</span>`
+          kpiHead.innerHTML = `<h1 class="paragraph44">Our <span style="color: #55ea43;">KPI</span> in <span style="color: #55ea43;">2026</span></h1>`
           changeCssPropertiesForEnglish();
       }
       document.querySelectorAll(".language-option").forEach(opt => opt.classList.toggle("active"));

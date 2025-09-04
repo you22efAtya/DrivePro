@@ -1,0 +1,41 @@
+.customers-section
+{
+    background-color: #0d1f1a;
+    padding-block: 100px;
+
+}
+
+.customers-section .header h1
+{
+    color: #55ea43;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+
+.slider-button
+{
+    background-color: #39ff14;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+@media all and (max-width: 445px)
+{
+    .customers-section .header h1
+    {
+        font-size: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media all and (min-width: 445px) and (max-width: 576px)
+{
+    .customers-section .header h1
+    {
+        font-size: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
