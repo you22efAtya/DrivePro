@@ -109,14 +109,4 @@ DrivePro
 * Mobile-friendly UI
 * Reporting & analytics dashboard
 
----
 
-## 👨‍💻 Author
-
-**Youssef Mohammed**
-
----
-
-## 📜 License
-
-This project is for educational and demonstration purposes.
